@@ -89,6 +89,24 @@ h1, h2, h3 {
   color: var(--coral);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-login {
+  color: var(--gray-600);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.nav-login:hover {
+  color: var(--dark);
+}
+
 .nav-cta {
   background: var(--coral);
   color: var(--white);
