@@ -4,7 +4,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
-  initPricingToggle();
 });
 
 // ----- Scroll Animations -----
@@ -30,26 +29,3 @@ function initScrollAnimations() {
   animatedElements.forEach(el => observer.observe(el));
 }
 
-// ----- Pricing Toggle -----
-function initPricingToggle() {
-  const buttons = document.querySelectorAll('.toggle-btn');
-  const monthly = document.getElementById('pricing-monthly');
-  const yearly = document.getElementById('pricing-yearly');
-
-  if (!buttons.length || !monthly || !yearly) return;
-
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      if (btn.dataset.plan === 'yearly') {
-        monthly.style.display = 'none';
-        yearly.style.display = '';
-      } else {
-        monthly.style.display = '';
-        yearly.style.display = 'none';
-      }
-    });
-  });
-}
