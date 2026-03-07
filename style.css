@@ -89,6 +89,24 @@ h1, h2, h3 {
   color: var(--coral);
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  color: var(--gray-500);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--navy);
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
@@ -882,6 +900,10 @@ h1, h2, h3 {
    ============================================= */
 
 @media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: 40px;
