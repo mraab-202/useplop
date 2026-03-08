@@ -358,6 +358,7 @@ h1, h2, h3 {
   gap: 8px;
   margin-bottom: 16px;
   padding: 0 4px;
+  flex-wrap: wrap;
 }
 
 .mock-filter {
@@ -367,6 +368,11 @@ h1, h2, h3 {
   font-weight: 500;
   border: 1.5px solid var(--gray-200);
   color: var(--gray-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .mock-filter.active {
