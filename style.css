@@ -846,6 +846,13 @@ h1, h2, h3 {
   margin-bottom: 20px;
 }
 
+.footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .footer-links a {
   color: var(--coral);
   text-decoration: none;
@@ -984,5 +991,78 @@ h1, h2, h3 {
 
   .mock-logo-block {
     text-align: left;
+  }
+}
+
+/* =============================================
+   LEGAL PAGES
+   ============================================= */
+
+.legal-page {
+  padding: 120px 24px 80px;
+  min-height: 100vh;
+  background: var(--gray-50);
+}
+
+.legal-container {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.legal-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--gray-500);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.legal-back:hover {
+  color: var(--coral);
+}
+
+.legal-container h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 8px;
+}
+
+.legal-updated {
+  color: var(--gray-400);
+  font-size: 0.85rem;
+  margin: 0 0 32px;
+}
+
+.legal-container h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 32px 0 8px;
+}
+
+.legal-container p {
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.legal-container a {
+  color: var(--coral);
+  text-decoration: none;
+}
+
+.legal-container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .legal-container {
+    padding: 32px 20px;
   }
 }
