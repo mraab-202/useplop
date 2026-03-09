@@ -353,21 +353,28 @@ h1, h2, h3 {
   color: white;
 }
 
-.mock-filters {
+.mock-filter-row {
   display: flex;
+  align-items: center;
   gap: 8px;
   margin-bottom: 16px;
   padding: 0 4px;
+}
+
+.mock-filters {
+  display: flex;
+  gap: 8px;
   flex-wrap: wrap;
+  flex: 1;
 }
 
 .mock-filter {
   padding: 5px 12px;
   border-radius: 50px;
   font-size: 0.65rem;
-  font-weight: 500;
-  border: 1.5px solid var(--gray-200);
-  color: var(--gray-500);
+  font-weight: 600;
+  border: 1.5px solid #4E2A84;
+  color: #4E2A84;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -376,9 +383,29 @@ h1, h2, h3 {
 }
 
 .mock-filter.active {
-  background: var(--navy);
+  background: #4E2A84;
   color: white;
-  border-color: var(--navy);
+  border-color: #4E2A84;
+}
+
+.mock-controls {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.mock-select, .mock-search {
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 0.6rem;
+  border: 1.5px solid var(--gray-200);
+  color: var(--gray-500);
+  white-space: nowrap;
+}
+
+.mock-search {
+  color: var(--gray-300);
+  min-width: 70px;
 }
 
 .mock-cards {
@@ -391,22 +418,41 @@ h1, h2, h3 {
   border: 1.5px solid var(--gray-200);
   border-radius: var(--radius-sm);
   padding: 14px;
+  border-left: 4px solid var(--gray-200);
+}
+
+.mock-card.border-job { border-left-color: #B9975B; }
+.mock-card.border-internship { border-left-color: #4E2A84; }
+.mock-card.border-competition { border-left-color: #1B7340; }
+
+.mock-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
 }
 
 .mock-tag {
   display: inline-block;
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
   font-size: 0.55rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin-bottom: 8px;
+  color: white;
 }
 
-.tag-competition { background: #F3E8FF; color: #7C3AED; }
-.tag-internship { background: #DBEAFE; color: #2563EB; }
-.tag-job { background: #FEF3C7; color: #D97706; }
+.tag-competition { background: #1B7340; }
+.tag-internship { background: #4E2A84; }
+.tag-job { background: #B9975B; }
+
+.mock-expiry {
+  font-size: 0.55rem;
+  color: var(--gray-400);
+  font-style: italic;
+  white-space: nowrap;
+}
 
 .mock-card-title {
   font-weight: 700;
@@ -419,6 +465,13 @@ h1, h2, h3 {
   font-size: 0.65rem;
   color: var(--gray-500);
   margin-bottom: 2px;
+}
+
+.mock-card-link {
+  font-size: 0.6rem;
+  color: #4E2A84;
+  margin-top: 8px;
+  font-weight: 500;
 }
 
 /* =============================================
