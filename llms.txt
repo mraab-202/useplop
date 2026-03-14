@@ -27,7 +27,7 @@ Plop is designed for university entrepreneurship centers and is currently used b
 
 1. Sign up at https://app.useplop.com
 2. Add your logo, pick your colors, connect your subdomain
-3. Share with your community — live in about 5 minutes
+3. Share with your community — live in less than 2 minutes
 
 ## Contact
 
