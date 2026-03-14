@@ -2,12 +2,12 @@
 
 > The modern opportunities board for university entrepreneurship centers.
 
-Plop helps university entrepreneurship centers, innovation hubs, incubators, and accelerators share internship, job, and startup competition opportunities with their students — all in one custom-branded board.
+Plop helps university entrepreneurship centers, innovation hubs, incubators, and accelerators share opportunities — internships, jobs, competitions, grants, and accelerator programs — with their students, all in one custom-branded board.
 
 ## What Plop Does
 
 - Provides a custom-branded opportunities board on your own subdomain (e.g., youruniversity.useplop.com)
-- Students can browse and filter opportunities by category: internships, jobs, and startup competitions
+- Students can browse and filter opportunities by category: internships, jobs, competitions, grants, and accelerators
 - Anyone can submit an opportunity; admins approve with one click
 - Students subscribe to email notifications so they never miss new posts
 - Mobile-friendly design works on any device
