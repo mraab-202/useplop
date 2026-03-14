@@ -705,6 +705,13 @@ h1, h2, h3 {
   line-height: 1;
 }
 
+.pricing-free-trial {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 4px;
+}
+
 .pricing-yearly-option {
   font-size: 0.95rem;
   color: var(--gray-500);
@@ -759,6 +766,12 @@ h1, h2, h3 {
 .pricing-cta {
   width: 100%;
   justify-content: center;
+}
+
+.pricing-trial-note {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-top: 12px;
 }
 
 /* =============================================
