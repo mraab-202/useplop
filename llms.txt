@@ -1,0 +1,35 @@
+# Plop
+
+> The modern opportunities board for university entrepreneurship centers.
+
+Plop helps university entrepreneurship centers, innovation hubs, incubators, and accelerators share internship, job, and startup competition opportunities with their students — all in one custom-branded board.
+
+## What Plop Does
+
+- Provides a custom-branded opportunities board on your own subdomain (e.g., youruniversity.useplop.com)
+- Students can browse and filter opportunities by category: internships, jobs, and startup competitions
+- Anyone can submit an opportunity; admins approve with one click
+- Students subscribe to email notifications so they never miss new posts
+- Mobile-friendly design works on any device
+- Full admin dashboard for managing posts, reviewing submissions, and controlling the board
+
+## Who Uses Plop
+
+Plop is designed for university entrepreneurship centers and is currently used by Northwestern University's entrepreneurship center, The Garage. It's ideal for any university program that needs to share opportunities with students in a centralized, branded way.
+
+## Pricing
+
+- $25/month or $250/year (save $50)
+- Everything included: custom branding, email subscriptions, admin dashboard, category filters, mobile-friendly design, unlimited posts
+- No hidden fees, no tiered plans
+
+## How to Get Started
+
+1. Sign up at https://app.useplop.com
+2. Add your logo, pick your colors, connect your subdomain
+3. Share with your community — live in about 5 minutes
+
+## Contact
+
+- Email: mike@useplop.com
+- Website: https://useplop.com
