@@ -1,0 +1,4 @@
+Contact: mailto:mike@useplop.com
+Preferred-Languages: en
+Canonical: https://useplop.com/.well-known/security.txt
+Expires: 2027-03-14T00:00:00.000Z

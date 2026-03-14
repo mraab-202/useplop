@@ -1,0 +1,86 @@
+# Plop — Full Documentation
+
+> The modern opportunities board for university entrepreneurship centers.
+
+Plop is a SaaS platform that gives university entrepreneurship centers, innovation hubs, incubators, and accelerators a custom-branded opportunities board. Students use it to discover internships, jobs, competitions, grants, and accelerator programs — all in one place.
+
+## Problem
+
+University entrepreneurship centers struggle to share opportunities with students effectively. Opportunities get buried in email threads, scattered across Slack channels, or lost on bulletin boards. Students miss deadlines because there's no central place to check.
+
+## Solution
+
+Plop provides a dedicated, custom-branded opportunities board that lives on the center's own subdomain (e.g., youruniversity.useplop.com). It's a single page where all opportunities are posted, filtered by category, and discoverable. Students can subscribe to email notifications so they never miss a new posting.
+
+## Key Features
+
+### Custom Branding
+Each center gets its own subdomain with their logo, colors, and branding. Plop becomes invisible — it looks like the center's own website. Example: Northwestern University's The Garage uses opportunities.thegarage.northwestern.edu.
+
+### Opportunity Categories
+Posts are organized into categories:
+- **Internships** — paid and unpaid internship positions at startups and companies
+- **Jobs** — full-time and part-time job openings
+- **Competitions** — pitch competitions, hackathons, and business plan contests
+- **Grants** — funding opportunities, microgrants, and fellowships
+- **Accelerators** — accelerator programs, incubator cohorts, and startup programs
+
+### Community Posting
+Anyone can submit an opportunity to the board. Submissions go through admin approval — admins review and approve with one click before posts go live. This keeps the board high-quality while allowing the broader community (alumni, partners, employers) to contribute.
+
+### Email Subscriptions
+Students enter their email to subscribe. They receive a notification whenever a new opportunity is approved and posted to the board. No app to download, no account to create — just an email address.
+
+### Admin Dashboard
+Center administrators get a full dashboard to:
+- Review and approve/reject submitted opportunities
+- Create and edit posts directly
+- Manage subscriber lists
+- Customize branding (logo, colors, subdomain)
+- View board analytics
+
+### Mobile-Friendly
+The board is fully responsive and works on phones, tablets, and desktops. Students browse opportunities from their phones between classes.
+
+## How It Works
+
+1. **Sign Up** — Create an account at https://app.useplop.com. Tell us about your center.
+2. **Customize** — Add your logo, pick your brand colors, and set up your subdomain.
+3. **Launch** — Share the URL with your community. The whole process takes less than 2 minutes.
+
+## Pricing
+
+Plop has one simple plan:
+- **$25/month** or **$250/year** (save $50 annually)
+- Everything is included: custom branding, email subscriptions, admin dashboard, category filters, mobile-friendly design, and unlimited posts
+- No hidden fees, no tiered plans, no per-user pricing
+- Start with a free trial
+
+## Who Uses Plop
+
+Plop is currently used by Northwestern University's entrepreneurship center, The Garage. It's designed for any university program that needs to share opportunities with students, including:
+- University entrepreneurship centers
+- Innovation hubs and labs
+- University-affiliated incubators
+- Student-focused accelerator programs
+- Career services offices with entrepreneurship programs
+
+## Technical Details
+
+- **Platform:** Web-based SaaS (no installation required)
+- **Hosting:** Cloud-hosted, always available
+- **Custom domains:** Each organization gets a subdomain on useplop.com, or can use their own custom domain
+- **Security:** HTTPS, admin authentication, reCAPTCHA spam protection
+
+## Contact
+
+- **Email:** mike@useplop.com
+- **Website:** https://useplop.com
+- **Sign up:** https://app.useplop.com
+
+## Links
+
+- Homepage: https://useplop.com
+- Sign Up / Log In: https://app.useplop.com
+- Terms of Service: https://useplop.com/terms.html
+- Privacy Policy: https://useplop.com/privacy.html

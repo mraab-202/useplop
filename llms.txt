@@ -2,6 +2,8 @@
 
 > The modern opportunities board for university entrepreneurship centers.
 
+> Full documentation: https://useplop.com/llms-full.txt
+
 Plop helps university entrepreneurship centers, innovation hubs, incubators, and accelerators share opportunities — internships, jobs, competitions, grants, and accelerator programs — with their students, all in one custom-branded board.
 
 ## What Plop Does
