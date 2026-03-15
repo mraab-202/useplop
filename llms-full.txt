@@ -58,7 +58,7 @@ Plop has one simple plan:
 
 ## Who Uses Plop
 
-Plop is currently used by Northwestern University's entrepreneurship center, The Garage. It's designed for any university program that needs to share opportunities with students, including:
+Plop is designed for any university program that needs to share opportunities with students, including:
 - University entrepreneurship centers
 - Innovation hubs and labs
 - University-affiliated incubators

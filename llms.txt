@@ -17,7 +17,7 @@ Plop helps university entrepreneurship centers, innovation hubs, incubators, and
 
 ## Who Uses Plop
 
-Plop is designed for university entrepreneurship centers and is currently used by Northwestern University's entrepreneurship center, The Garage. It's ideal for any university program that needs to share opportunities with students in a centralized, branded way.
+Plop is designed for university entrepreneurship centers, innovation hubs, incubators, and accelerators. It's ideal for any university program that needs to share opportunities with students in a centralized, branded way.
 
 ## Pricing
 
