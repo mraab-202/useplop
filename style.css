@@ -466,6 +466,7 @@ h1, h2, h3 {
 /* Used By / Social Proof */
 .used-by {
   padding: 0 24px 20px;
+  margin-top: -40px;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -489,7 +490,7 @@ h1, h2, h3 {
 }
 
 .used-by-logo {
-  height: 56px;
+  height: 72px;
   width: auto;
   object-fit: contain;
 }
