@@ -465,30 +465,31 @@ h1, h2, h3 {
 
 /* Used By / Social Proof */
 .used-by {
-  padding: 60px 24px 0;
+  padding: 0 24px 20px;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
 .used-by-text {
-  font-size: 1.05rem;
-  color: var(--gray-400);
-  margin-bottom: 32px;
-  font-weight: 500;
+  font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  margin-bottom: 40px;
 }
 
 .used-by-logos {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 56px;
+  gap: 64px;
   flex-wrap: wrap;
 }
 
 .used-by-logo {
-  height: 36px;
-  max-width: 200px;
+  height: 56px;
   width: auto;
   object-fit: contain;
 }
