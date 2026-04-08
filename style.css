@@ -463,6 +463,43 @@ h1, h2, h3 {
    FEATURES
    ============================================= */
 
+/* Used By / Social Proof */
+.used-by {
+  padding: 60px 24px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.used-by-text {
+  font-size: 1.05rem;
+  color: var(--gray-400);
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.used-by-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.used-by-logo {
+  height: 44px;
+  width: auto;
+  opacity: 0.45;
+  filter: grayscale(100%);
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+.used-by-logo:hover {
+  opacity: 0.7;
+  filter: grayscale(0%);
+}
+
+/* Features */
 .features {
   padding: 100px 24px;
   max-width: 1200px;
