@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Squash the Beef</title>
+  <meta name="description" content="Privacy Policy for Squash the Beef, the iOS app for making things right between friends.">
+  <link rel="canonical" href="https://useplop.com/squash/privacy.html">
+  <style>
+    :root {
+      --bg: #0e0e11;
+      --fg: #f5f5f5;
+      --muted: #a9a9b0;
+      --accent: #ff9a4d;
+      --border: #23232a;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg); color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px; line-height: 1.6;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.25rem; margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+    p, li { color: var(--fg); }
+    a { color: var(--accent); }
+    .updated { color: var(--muted); font-style: italic; }
+    table {
+      width: 100%; border-collapse: collapse; margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left; padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid var(--border); vertical-align: top;
+    }
+    th { background: #1a1a20; }
+    footer {
+      margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 0.9rem; text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy for Squash the Beef</h1>
+    <p class="updated">Last updated: April 17, 2026</p>
+
+    <p>Squash the Beef ("we", "us", the "App") helps friends make things right after a disagreement by letting the wronged party name an amount and the offender pay to resolve it. This policy explains what we collect, why we collect it, and how we use it.</p>
+
+    <h2>Who we are</h2>
+    <p>The App is operated by Michael Raab ("operator"). You can reach us at <a href="mailto:mike@useplop.com">mike@useplop.com</a>.</p>
+
+    <h2>What we collect</h2>
+    <p>We collect the minimum personal data needed to run the App.</p>
+    <table>
+      <thead><tr><th>Category</th><th>Examples</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>Identity</td><td>Name (from Sign in with Apple), Apple user identifier</td><td>Create your account; show friends who you are</td></tr>
+        <tr><td>Contact info</td><td>Phone number (optional, for friend matching and SMS invites)</td><td>Find friends who use the App; deliver invitations</td></tr>
+        <tr><td>Device info</td><td>APNs push token, device type</td><td>Send notifications about resolutions you're involved in</td></tr>
+        <tr><td>Payment info</td><td>Stripe customer and Connect account identifiers, last-four card digits (where applicable)</td><td>Process payments and disburse funds; NOT full card numbers</td></tr>
+        <tr><td>Resolution data</td><td>Amount, reason text, participants, timestamps, outcome</td><td>Operate the core feature of the App</td></tr>
+        <tr><td>Contacts access</td><td>A phone number you choose to share from your contacts</td><td>Only used when you explicitly pick a contact to add as a friend — we do not upload your address book</td></tr>
+      </tbody>
+    </table>
+    <p>We do <strong>not</strong> collect: location, browsing history outside the App, health data, photos, microphone or camera input, or your full contact list.</p>
+
+    <h2>How we use it</h2>
+    <ul>
+      <li><strong>Provide the service</strong> — show your active requests, notify the right parties, process payments, transfer funds.</li>
+      <li><strong>Prevent abuse and fraud</strong> — detect and block account misuse.</li>
+      <li><strong>Communicate with you</strong> — transactional SMS (via Twilio) and push notifications (via APNs) about your requests. We do not send marketing messages.</li>
+    </ul>
+    <p>We do not sell your data. We do not use it to train advertising profiles.</p>
+
+    <h2>Who we share it with</h2>
+    <table>
+      <thead><tr><th>Recipient</th><th>What they receive</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://stripe.com/privacy">Stripe</a></td><td>Name, email (if provided), payment and payout info</td><td>Process card payments and transfers</td></tr>
+        <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Anonymous user identifier via Sign in with Apple, push tokens</td><td>Authentication and push delivery</td></tr>
+        <tr><td><a href="https://www.twilio.com/legal/privacy">Twilio</a></td><td>Phone number, message body</td><td>Deliver SMS invites</td></tr>
+        <tr><td>Hosting provider (Railway)</td><td>Encrypted database contents</td><td>Infrastructure</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Where we store it</h2>
+    <p>Our backend runs on Railway in the United States. Payment data is held by Stripe under their own security and compliance program (PCI DSS Level 1).</p>
+
+    <h2>How long we keep it</h2>
+    <ul>
+      <li>Active account data is retained while your account exists.</li>
+      <li>Resolved payment records are retained for 7 years for accounting and dispute-resolution purposes.</li>
+      <li>You may request deletion at any time (see below); we will delete or anonymize data not required for tax, legal, or dispute-resolution obligations.</li>
+    </ul>
+
+    <h2>Your rights</h2>
+    <p>You can:</p>
+    <ul>
+      <li><strong>Access</strong> a copy of your data — email us.</li>
+      <li><strong>Correct</strong> inaccurate data — edit in the App or email us.</li>
+      <li><strong>Delete</strong> your account and associated personal data — use the in-app delete option or email us.</li>
+      <li><strong>Withdraw consent</strong> for SMS or push — disable in OS settings or reply STOP to any SMS.</li>
+    </ul>
+    <p>If you are in the EU, UK, or California, you have additional rights under GDPR/CCPA. Email us to exercise them.</p>
+
+    <h2>Children</h2>
+    <p>The App is not intended for anyone under 17, and we do not knowingly collect data from children. If you believe a child has signed up, please contact us so we can remove the account.</p>
+
+    <h2>Security</h2>
+    <p>We use TLS in transit and authenticated access controls at rest. No system is perfect. If you discover a vulnerability, please email us directly and we will respond.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy. Material changes will be surfaced in the App. The "Last updated" date at the top reflects the most recent revision.</p>
+
+    <h2>Contact</h2>
+    <p>Michael Raab — <a href="mailto:mike@useplop.com">mike@useplop.com</a></p>
+
+    <footer>© 2026 Squash the Beef</footer>
+  </div>
+</body>
+</html>
