@@ -571,8 +571,8 @@ section { scroll-margin-top: 70px; }
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--accent-dark);
-  background: var(--accent-soft);
+  color: #256B4F;
+  background: #E4F3EC;
   border-radius: 999px;
   padding: 5px 14px;
   margin-bottom: 18px;
@@ -590,7 +590,7 @@ section { scroll-margin-top: 70px; }
 .pricing-period { font-size: 17px; font-weight: 500; color: var(--muted); letter-spacing: 0; }
 
 .pricing-yearly-option { font-size: 14.5px; color: var(--muted); margin: 10px 0 24px; }
-.pricing-save { color: var(--accent-dark); font-weight: 600; }
+.pricing-save { font-weight: 600; }
 
 .pricing-features {
   list-style: none;
