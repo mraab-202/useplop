@@ -738,3 +738,22 @@ section { scroll-margin-top: 70px; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Hero mock: credits & perks pill at the end of the tab row */
+.mock-tab.mock-perks-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 4px;
+  padding-left: 14px;
+  border-left: 1px solid var(--line);
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+.mock-perks-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--dot-credits);
+  flex: none;
+}
