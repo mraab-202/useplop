@@ -411,14 +411,16 @@ a { color: inherit; }
   flex-wrap: wrap;
 }
 
+.used-by-link { display: inline-flex; }
+
 .used-by-logo {
-  height: 30px;
-  opacity: 0.55;
+  height: 46px;
+  opacity: 0.8;
   filter: grayscale(1);
-  transition: opacity 0.15s;
+  transition: opacity 0.15s, filter 0.15s;
 }
 
-.used-by-logo:hover { opacity: 0.85; }
+.used-by-link:hover .used-by-logo { opacity: 1; filter: none; }
 
 /* =============================================
    SECTIONS (shared)
@@ -771,7 +773,8 @@ section { scroll-margin-top: 70px; }
   .nav-login { display: none; }
   .nav-mobile .nav-mobile-login { display: block; }
   .features-grid { grid-template-columns: 1fr; }
-  .used-by-logos { gap: 32px; }
+  .used-by-logos { gap: 28px; }
+  .used-by-logo { height: 34px; }
   .mock-header { flex-wrap: wrap; }
   .mock-tabs { overflow-x: auto; scrollbar-width: none; }
   .hero { padding-bottom: 64px; }
