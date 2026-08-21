@@ -27,6 +27,21 @@
   .input input { border:0; outline:0; font:inherit; font-size:17px; width:100%; background:transparent; color:var(--ink); }
   .results a { text-decoration:none; color:inherit; }
   .results .row:hover { background:var(--paper); }
+  .claim { margin:6px 8px 10px; padding:14px; border:1px solid var(--line); border-radius:10px; background:#fff; }
+  .claim .hd { font-size:13px; font-weight:700; margin-bottom:8px; }
+  .claim .grid { display:grid; grid-template-columns:1fr 1fr auto; gap:8px; }
+  .claim input { font:inherit; font-size:14px; padding:10px 12px; border:1px solid var(--line); border-radius:8px; outline:0; }
+  .claim input:focus { border-color:var(--ink); }
+  .claim button { font:inherit; font-size:14px; font-weight:700; padding:10px 14px; border:0; border-radius:8px; background:var(--accent); color:#fff; cursor:pointer; white-space:nowrap; }
+  .claim button:disabled { opacity:.6; cursor:default; }
+  .claim .msg { margin-top:8px; font-size:13px; line-height:1.45; }
+  .claim .msg.ok { color:#047857; } .claim .msg.err { color:#c0392b; }
+  .claim .fine { font-size:11.5px; color:var(--muted); margin-top:6px; }
+  .rowwrap .row { display:flex; align-items:center; gap:12px; padding:10px 8px; border-radius:8px; text-decoration:none; color:inherit; }
+  .rowwrap .actions { margin-left:auto; display:flex; gap:6px; align-items:center; }
+  .rowwrap .actions a, .rowwrap .actions button { font:inherit; font-size:12.5px; font-weight:600; padding:6px 10px; border-radius:999px; border:1px solid var(--line); background:#fff; color:var(--ink); cursor:pointer; text-decoration:none; white-space:nowrap; }
+  .rowwrap .actions button.primary { background:var(--ink); color:#fff; border-color:var(--ink); }
+  @media (max-width:600px) { .claim .grid { grid-template-columns:1fr } .rowwrap .actions { flex-wrap:wrap } }
   .results .empty { padding:10px 8px; font-size:13.5px; color:var(--muted); }
   .results { margin-top:8px; border-top:1px solid var(--line); padding-top:8px; }
   .row { display:flex; align-items:center; gap:12px; padding:10px 8px; border-radius:8px; }
@@ -127,12 +142,46 @@
   function render(boards, term) {
     if (!term) { box.hidden = true; box.innerHTML = ''; return; }
     if (!boards.length) { box.innerHTML = '<div class="empty">No board found for “' + esc(term) + '” yet — use the link below and I\'ll build it.</div>'; box.hidden = false; return; }
-    box.innerHTML = boards.map(function (b) {
-      return '<a class="row" href="' + esc(b.url) + '" target="_blank" rel="noopener">' +
+    box.innerHTML = boards.map(function (b, i) {
+      var claimBtn = b.claimable
+        ? '<button type="button" class="primary" data-claim="' + i + '">Claim admin access</button>'
+        : '<span style="font-size:12px;color:var(--muted)">Has an admin team</span>';
+      return '<div class="rowwrap" data-i="' + i + '"><div class="row">' +
         '<i class="swatch" style="background:' + esc(b.primary_color || '#1A1A2E') + '"></i>' +
-        '<b>' + esc(b.name) + '</b><span>' + esc(b.slug) + '.useplop.com</span></a>';
+        '<b>' + esc(b.name) + '</b>' +
+        '<span class="actions"><a href="' + esc(b.url) + '" target="_blank" rel="noopener">Open board</a>' + claimBtn + '</span>' +
+        '</div></div>';
     }).join('');
     box.hidden = false;
+    box.querySelectorAll('button[data-claim]').forEach(function (btn) {
+      btn.addEventListener('click', function () { openClaim(boards[+btn.getAttribute('data-claim')], btn.closest('.rowwrap')); });
+    });
+  }
+  function openClaim(b, wrap) {
+    var existing = wrap.querySelector('.claim'); if (existing) { existing.querySelector('input').focus(); return; }
+    var el = document.createElement('div'); el.className = 'claim';
+    el.innerHTML = '<div class="hd">Claim admin access to ' + esc(b.name) + '</div>' +
+      '<div class="grid"><input type="email" placeholder="you@' + esc((b.url || '').replace(/^https?:\/\/[^.]+\./, '').replace(/useplop\.com$/, 'university.edu')) + '" autocomplete="email">' +
+      '<input type="text" placeholder="Your title (e.g. Director)" maxlength="120"><button type="button">Send my invite</button></div>' +
+      '<div class="fine">Use your university email — we verify it matches ' + esc(b.name) + '. You\'ll get an invite to set your password.</div><div class="msg"></div>';
+    wrap.appendChild(el);
+    var email = el.querySelectorAll('input')[0], title = el.querySelectorAll('input')[1], btn = el.querySelector('button'), msg = el.querySelector('.msg');
+    email.focus();
+    function submit() {
+      msg.className = 'msg'; msg.textContent = '';
+      if (!email.value.trim() || !title.value.trim()) { msg.className = 'msg err'; msg.textContent = 'Email and title are both needed.'; return; }
+      btn.disabled = true; btn.textContent = 'Sending…';
+      fetch('https://app.useplop.com/api/boards/' + encodeURIComponent(b.slug) + '/claim', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email.value.trim(), title: title.value.trim() })
+      }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); }).then(function (res) {
+        if (res.ok && res.d.status === 'invited') { msg.className = 'msg ok'; msg.textContent = '✓ Invite sent to ' + email.value.trim() + ' — open it to set your password and you\'re in.'; btn.textContent = 'Sent'; return; }
+        if (res.ok && res.d.status === 'pending') { msg.className = 'msg ok'; msg.textContent = '✓ Request received. We confirm this school by hand — you\'ll have your invite shortly (usually within the hour at GCEC).'; btn.textContent = 'Requested'; return; }
+        msg.className = 'msg err'; msg.textContent = (res.d && res.d.error) || 'Something went wrong — email mike@useplop.com.'; btn.disabled = false; btn.textContent = 'Send my invite';
+      }).catch(function () { msg.className = 'msg err'; msg.textContent = 'Network error — try again or email mike@useplop.com.'; btn.disabled = false; btn.textContent = 'Send my invite'; });
+    }
+    btn.addEventListener('click', submit);
+    [email, title].forEach(function (i) { i.addEventListener('keydown', function (e) { if (e.key === 'Enter') submit(); }); });
   }
   q.addEventListener('input', function () {
     clearTimeout(t);
