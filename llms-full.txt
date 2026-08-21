@@ -51,8 +51,9 @@ The board is fully responsive and works on phones, tablets, and desktops. Studen
 ## Pricing
 
 Plop has one simple plan:
-- **Free for the first 30 days** — no credit card required
-- After the trial: **$25/month** or **$250/year** (save $50 annually)
+- **$50/month, billed annually** ($600 per year, per center)
+- **90-day money-back guarantee** — full refund if it isn't working for your center
+- Invoices and purchase orders accepted
 - Everything is included: custom branding, email subscriptions, admin dashboard, category filters, mobile-friendly design, and unlimited posts
 - No hidden fees, no tiered plans, no per-user pricing
 
