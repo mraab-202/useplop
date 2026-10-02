@@ -46,7 +46,8 @@
     .portfolio-cta .cta-note { margin-top: 14px; }
     .always-free { max-width: 760px; margin: 0 auto; padding: 0 24px 72px; text-align: center; color: var(--muted); font-size: 15px; }
     .always-free strong { color: var(--ink); }
-    @media (max-width: 960px) { .reach-grid { grid-template-columns: 1fr; } .portfolio-card { grid-template-columns: 1fr; padding: 36px 28px; } }
+    .steps.steps-4 { grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; max-width: 1120px; }
+    @media (max-width: 960px) { .steps.steps-4 { grid-template-columns: 1fr; } .steps.steps-4 .step-arrow { display: none; } .reach-grid { grid-template-columns: 1fr; } .portfolio-card { grid-template-columns: 1fr; padding: 36px 28px; } }
   </style>
 </head>
 <body>
@@ -96,7 +97,7 @@
         <a href="https://app.useplop.com/submit" class="btn-primary">Post a Job or Internship</a>
         <a href="https://board.useplop.com" class="btn-ghost">See a Live Board</a>
       </div>
-      <p class="hero-note">Free to post. Each center reviews what reaches its students.</p>
+      <p class="hero-note">$199 for 30 days across the network, billed only after your post is approved. Each center reviews what reaches its students.</p>
     </div>
   </section>
 
@@ -139,9 +140,9 @@
   <section class="how-it-works" id="how-it-works">
     <div class="section-header">
       <div class="section-badge">How It Works</div>
-      <h2>Three steps. No account required.</h2>
+      <h2>Four steps. No account required.</h2>
     </div>
-    <div class="steps">
+    <div class="steps steps-4">
       <div class="step">
         <div class="step-number">1</div>
         <h3>Post</h3>
@@ -152,6 +153,14 @@
       </div>
       <div class="step">
         <div class="step-number">2</div>
+        <h3>Plop approves</h3>
+        <p>We check it fits student founders. If it does, you get a payment link: $199 for 30 days. Nothing is charged before that.</p>
+      </div>
+      <div class="step-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
         <h3>Centers review</h3>
         <p>Each center&rsquo;s admin approves what fits their students. Nothing goes live without a human saying yes.</p>
       </div>
@@ -159,7 +168,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </div>
       <div class="step">
-        <div class="step-number">3</div>
+        <div class="step-number">4</div>
         <h3>Students apply</h3>
         <p>Your post appears on the boards and in student digests. Applications come straight to your link or inbox.</p>
       </div>
@@ -211,9 +220,9 @@
         </div>
       </details>
       <details class="faq-item">
-        <summary class="faq-question">Is it free?</summary>
+        <summary class="faq-question">What does it cost?</summary>
         <div class="faq-answer">
-          <p>Posting a job or internship is free today. We expect to introduce paid plans for high-volume and portfolio hiring, and we will say so clearly before anything changes. Opportunities from universities, nonprofits, and student founders will always be free.</p>
+          <p>Job posts from employers are $199 for 30 days across the whole network, billed by card only after Plop approves your post. Internships, competitions, grants, accelerators, startup credits, and posts from universities, nonprofits, and student founders are free.</p>
         </div>
       </details>
       <details class="faq-item">
@@ -237,7 +246,7 @@
   <section class="cta">
     <div class="cta-content">
       <h2>Your next hire is already<br>at an entrepreneurship center.</h2>
-      <p>Post a job or internship in a few minutes. No account, no fee, and each center reviews it before it reaches students.</p>
+      <p>Post a job or internship in a few minutes. No account needed, and nothing is charged until Plop approves your post.</p>
       <div class="cta-actions">
         <a href="https://app.useplop.com/submit" class="btn-cta">Post a Job or Internship</a>
       </div>
