@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Student Founders — Post Jobs &amp; Internships on Plop</title>
+  <meta name="description" content="Post a job or internship once and reach entrepreneurial students at university entrepreneurship centers across the Plop network. Free to post. Each center reviews what reaches its students.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://useplop.com/employers.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://useplop.com/employers.html">
+  <meta property="og:title" content="Hire Student Founders — Post Jobs &amp; Internships on Plop">
+  <meta property="og:description" content="Post once, reach entrepreneurial students at centers across the Plop network. Free to post.">
+  <meta property="og:image" content="https://useplop.com/images/og-image-v2.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hire Student Founders — Post Jobs &amp; Internships on Plop">
+  <meta name="twitter:description" content="Post once, reach entrepreneurial students at centers across the Plop network. Free to post.">
+  <meta name="twitter:image" content="https://useplop.com/images/og-image-v2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific: single-column hero, reach cards, portfolio panel */
+    .hero.hero-single { grid-template-columns: 1fr; text-align: center; padding-bottom: 36px; }
+    .hero.hero-single .hero-subtitle { max-width: 58ch; margin-left: auto; margin-right: auto; }
+    .hero.hero-single .hero-actions { justify-content: center; }
+    .reach { padding: 72px 24px 24px; max-width: 1120px; margin: 0 auto; }
+    .reach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .reach-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 24px; }
+    .reach-card h3 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 19px; margin-bottom: 8px; }
+    .reach-card p { color: var(--ink-soft); font-size: 15px; }
+    .reach-card .reach-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: 1px; }
+    .portfolio { max-width: 1120px; margin: 0 auto; padding: 24px 24px 92px; }
+    .portfolio-card { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 48px 40px; display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 40px; align-items: center; }
+    .portfolio-card h2 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 30px; line-height: 1.15; margin-bottom: 12px; }
+    .portfolio-card p { color: rgba(255,255,255,0.75); font-size: 16px; }
+    .portfolio-card ul { list-style: none; margin-top: 16px; display: grid; gap: 8px; }
+    .portfolio-card li { padding-left: 24px; position: relative; color: rgba(255,255,255,0.9); font-size: 15px; }
+    .portfolio-card li::before { content: ''; position: absolute; left: 0; top: 9px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
+    .portfolio-cta { text-align: center; }
+    .portfolio-cta .btn-cta { display: inline-block; }
+    .portfolio-cta .cta-note { margin-top: 14px; }
+    .always-free { max-width: 760px; margin: 0 auto; padding: 0 24px 72px; text-align: center; color: var(--muted); font-size: 15px; }
+    .always-free strong { color: var(--ink); }
+    @media (max-width: 960px) { .reach-grid { grid-template-columns: 1fr; } .portfolio-card { grid-template-columns: 1fr; padding: 36px 28px; } }
+  </style>
+</head>
+<body>
+
+  <!-- Nav (same as homepage; section links point back to it) -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">plop<span class="logo-dot">.</span></a>
+      <div class="nav-links">
+        <a href="/#network" class="nav-link">The Network</a>
+        <a href="/#features" class="nav-link">Features</a>
+        <a href="/#pricing" class="nav-link">Pricing</a>
+        <a href="/#faq" class="nav-link">FAQ</a>
+        <a href="https://board.useplop.com" class="nav-link">Live Example</a>
+        <a href="https://app.useplop.com/submit" class="nav-link">Post an Opportunity</a>
+      </div>
+      <div class="nav-actions">
+        <a href="https://app.useplop.com/login" class="nav-login">Log In</a>
+        <a href="https://app.useplop.com/submit" class="nav-cta">Post a Job</a>
+        <button class="nav-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line class="menu-line-1" x1="4" y1="7" x2="20" y2="7"/>
+            <line class="menu-line-2" x1="4" y1="12" x2="20" y2="12"/>
+            <line class="menu-line-3" x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile" id="mobile-menu">
+      <a href="/#network" class="nav-mobile-link">The Network</a>
+      <a href="/#features" class="nav-mobile-link">Features</a>
+      <a href="/#pricing" class="nav-mobile-link">Pricing</a>
+      <a href="/#faq" class="nav-mobile-link">FAQ</a>
+      <a href="https://board.useplop.com" class="nav-mobile-link">Live Example</a>
+      <a href="https://app.useplop.com/submit" class="nav-mobile-link">Post an Opportunity</a>
+      <a href="https://app.useplop.com/login" class="nav-mobile-link nav-mobile-login">Log In</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero-single">
+    <div class="hero-content">
+      <div class="hero-badge">For Employers &amp; Investors</div>
+      <h1>Hire student founders.<br><span class="hero-highlight">Post once, reach every center.</span></h1>
+      <p class="hero-subtitle">Plop runs the opportunities boards for university entrepreneurship centers. Post a job or internship and it goes to each center&rsquo;s board and student email digest &mdash; the students who build things, not everyone with a .edu address.</p>
+      <div class="hero-actions">
+        <a href="https://app.useplop.com/submit" class="btn-primary">Post a Job or Internship</a>
+        <a href="https://board.useplop.com" class="btn-ghost">See a Live Board</a>
+      </div>
+      <p class="hero-note">Free to post. Each center reviews what reaches its students.</p>
+    </div>
+  </section>
+
+  <!-- Used By -->
+  <section class="used-by">
+    <p class="used-by-text">Reaching students at</p>
+    <div class="used-by-logos">
+      <a href="https://city.yale.edu/" target="_blank" rel="noopener noreferrer" class="used-by-link"><img src="images/logo-yale.svg" alt="Yale University" class="used-by-logo"></a>
+      <a href="https://www.thegarage.northwestern.edu/" target="_blank" rel="noopener noreferrer" class="used-by-link"><img src="images/logo-northwestern.svg" alt="Northwestern University" class="used-by-logo"></a>
+      <a href="https://eent.engineering.upenn.edu/" target="_blank" rel="noopener noreferrer" class="used-by-link"><img src="images/logo-penn.svg" alt="University of Pennsylvania" class="used-by-logo"></a>
+      <a href="https://pavacenter.jhu.edu/" target="_blank" rel="noopener noreferrer" class="used-by-link"><img src="images/logo-pava.svg" alt="Pava Marie LaPere Center for Entrepreneurship" class="used-by-logo"></a>
+      <a href="https://entrepreneurship.msu.edu/" target="_blank" rel="noopener noreferrer" class="used-by-link"><img src="images/logo-msu.svg" alt="Burgess Institute for Entrepreneurship and Innovation" class="used-by-logo"></a>
+    </div>
+  </section>
+
+  <!-- Who you reach -->
+  <section class="reach" id="reach">
+    <div class="section-header">
+      <div class="section-badge">Who You Reach</div>
+      <h2>The students who already chose the hard path.</h2>
+      <p>Entrepreneurship centers attract a specific kind of student. They are the ones LinkedIn and the big career platforms can&rsquo;t pick out of the crowd.</p>
+    </div>
+    <div class="reach-grid">
+      <div class="reach-card">
+        <h3><span class="reach-dot" style="background: var(--dot-job)"></span>Early hires who get it</h3>
+        <p>Students who spend their free time at the entrepreneurship center are self-selected for ambiguity, ownership, and speed. They understand what an early-stage role actually is.</p>
+      </div>
+      <div class="reach-card">
+        <h3><span class="reach-dot" style="background: var(--dot-internship)"></span>Opted in, not spammed</h3>
+        <p>Students subscribe to their center&rsquo;s board and choose the categories they want. Your post arrives in a digest they asked for, from a source they trust.</p>
+      </div>
+      <div class="reach-card">
+        <h3><span class="reach-dot" style="background: var(--dot-accelerator)"></span>Named centers, real brands</h3>
+        <p>Each board is run by the center itself, at its own university. Your post shows up under a name students recognize, with you listed as the poster.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-header">
+      <div class="section-badge">How It Works</div>
+      <h2>Three steps. No account required.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Post</h3>
+        <p>Fill in the role, how to apply, and a deadline. Takes a few minutes.</p>
+      </div>
+      <div class="step-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Centers review</h3>
+        <p>Each center&rsquo;s admin approves what fits their students. Nothing goes live without a human saying yes.</p>
+      </div>
+      <div class="step-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Students apply</h3>
+        <p>Your post appears on the boards and in student digests. Applications come straight to your link or inbox.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio / high-volume -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-card">
+      <div>
+        <h2>Hiring across a portfolio, or hiring often?</h2>
+        <p>We&rsquo;re building plans for VC platform teams, accelerators, and startups that hire student talent every quarter. Tell us what you need and we&rsquo;ll set you up directly.</p>
+        <ul>
+          <li>Post for every company in your portfolio from one place</li>
+          <li>Featured placement on boards and in digests</li>
+          <li>Views and applies on every post you make</li>
+        </ul>
+      </div>
+      <div class="portfolio-cta">
+        <a href="mailto:mike@useplop.com?subject=Portfolio%20hiring%20on%20Plop&body=Hi%20Mike%2C%0A%0AWe%27re%20interested%20in%20posting%20roles%20to%20the%20Plop%20network.%0A%0AOrganization%3A%20%0ARoles%20we%20hire%20for%3A%20%0AHow%20often%3A%20%0A" class="btn-cta">Tell Us What You Need</a>
+        <p class="cta-note">Opens an email to mike@useplop.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-header">
+      <div class="section-badge">FAQ</div>
+      <h2>Questions employers ask.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-question">Who sees my post?</summary>
+        <div class="faq-answer">
+          <p>Students at the entrepreneurship centers on the Plop network. Each center runs a branded board for its own community and sends email digests to students who subscribed. Your post goes to each center for review and, once approved, appears on that board and in its digests.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">Does every center show my post?</summary>
+        <div class="faq-answer">
+          <p>No. Each center&rsquo;s admin decides what fits their students, so a role that suits one campus may be passed over by another. That review is why students trust the board, and it is what makes the applications you do get worth having.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">What can I post?</summary>
+        <div class="faq-answer">
+          <p>Jobs and internships, full-time or part-time, remote or on-site. If you run a competition, grant, accelerator, or startup credits program, you can post those too; they are always free.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">Is it free?</summary>
+        <div class="faq-answer">
+          <p>Posting a job or internship is free today. We expect to introduce paid plans for high-volume and portfolio hiring, and we will say so clearly before anything changes. Opportunities from universities, nonprofits, and student founders will always be free.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">How do students apply?</summary>
+        <div class="faq-answer">
+          <p>However you choose: a link to your careers page or application form, or an email address. Plop does not sit between you and the applicant. Students see your name and organization as the poster.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">How long does a post stay up?</summary>
+        <div class="faq-answer">
+          <p>Until the deadline or expiration date you set when posting. Boards remove expired posts automatically, so students never apply to roles that have closed.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <p class="always-free"><strong>A note for centers:</strong> community posts, student startups, competitions, grants, and accelerators stay free on Plop, and every post still goes through your approval queue. Employer posting exists so your students see real roles at companies that want to hire them.</p>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Your next hire is already<br>at an entrepreneurship center.</h2>
+      <p>Post a job or internship in a few minutes. No account, no fee, and each center reviews it before it reaches students.</p>
+      <div class="cta-actions">
+        <a href="https://app.useplop.com/submit" class="btn-cta">Post a Job or Internship</a>
+      </div>
+      <p class="cta-note">Questions? Email <a href="mailto:mike@useplop.com">mike@useplop.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="/" class="logo">plop<span class="logo-dot">.</span></a>
+      <p class="footer-text">Where opportunities land. The opportunities board for university entrepreneurship centers.</p>
+      <div class="footer-links">
+        <a href="https://app.useplop.com/submit">Post an opportunity</a>
+        <a href="/employers.html">For employers</a>
+        <a href="mailto:mike@useplop.com">mike@useplop.com</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Plop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
