@@ -366,6 +366,7 @@ a { color: inherit; }
 
 .chip-competition { --dot: var(--dot-competition); }
 .chip-internship { --dot: var(--dot-internship); }
+.chip-accelerator { --dot: var(--dot-accelerator); }
 .chip-credits { --dot: var(--dot-credits); }
 .chip-grant { --dot: var(--dot-grant); }
 
